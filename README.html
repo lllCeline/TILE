@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)file:///C:/Users/EDY/AppData/Local/Temp/mume202346-28824-hropp6.w1w3h.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>README</title>
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="./README_files/katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p,html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div{display:inline}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  300px/2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header" id="1introduction">1.Introduction</h1>
+
+<p>The <strong>TILE</strong> package provides tools to infer the fractions of a priori known cell subtypes present in a sample representing a mixture of such cell-types. Inference proceeds via one of 4 methods (linear model, ssGSEA, simple average, geometric mean).</p>
+<p>Besides, for comparison of two patient groups, we provide a variety of statistical methods and visualization methods.</p>
+<p>For now, the package contains <strong>7 priori known signatures</strong> and <strong>2 public databases</strong>.</p>
+<h1 class="mume-header" id="2installation">2.Installation</h1>
+
+<p>The dependencies includs  <code>GSVA</code>, <code>dplyr</code>, <code>ggplot2</code>, <code>ggpubr</code>, <code>ComplexHeatmap</code>, <code>grid</code>, <code>limma</code>, <code>reshape2</code>, <code>rstatix</code></p>
+<pre data-role="codeBlock" data-info="R" class="language-r">devtools<span class="token operator">::</span>install<span class="token punctuation">(</span><span class="token string">"TILE"</span><span class="token punctuation">)</span>
+</pre><p>library R package</p>
+<pre data-role="codeBlock" data-info="R" class="language-r">library<span class="token punctuation">(</span><span class="token string">"TILE"</span><span class="token punctuation">)</span>
+</pre><h1 class="mume-header" id="3manual">3.Manual</h1>
+
+<h2 class="mume-header" id="31-cell-type-fractions-estimtation">3.1 Cell type fractions estimtation</h2>
+
+<h3 class="mume-header" id="311-cyt-signature">3.1.1 CYT signature</h3>
+
+<p>Cytolytic activity is associated with counter-regulatory immune responses and improved prognosis, the CYT (cytolytic activity) marker is estimated using the expression of granzyme A and perforin according to Rooney et al.,2015</p>
+<pre data-role="codeBlock" data-info="R" class="language-r">result <span class="token operator">&lt;-</span> CYT_calculation<span class="token punctuation">(</span>demo_TPM<span class="token punctuation">)</span>
+
+<span class="token comment">#cell type</span>
+CYT_value
+PRF1
+GZMA
+</pre><h3 class="mume-header" id="312-tils-marker">3.1.2 TILs marker</h3>
+
+<p>Previous study found tumor infiltrating lymphocytes (TILs) can inform immune oncology research and the choice of immunotherapy for individual patients.</p>
+<p>In addition, cell population relative to total TILs cell type enrichment scores has prognostic relevance, which can be interpreted as measuring the abundance or depletion of each cell population relative to total TILs.</p>
+<p>Total TILs score and cell type enrichment scores are calculated according to Danaher et al.,2017.</p>
+<pre data-role="codeBlock" data-info="R" class="language-r">result <span class="token operator">&lt;-</span> Co_expression<span class="token punctuation">(</span>demo_TPM<span class="token punctuation">)</span>
+TILs_score <span class="token operator">&lt;-</span> data.frame<span class="token punctuation">(</span>result<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>check.names <span class="token operator">=</span> <span class="token boolean">FALSE</span><span class="token punctuation">)</span>
+cell_enrich <span class="token operator">&lt;-</span> data.frame<span class="token punctuation">(</span>result<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>check.names <span class="token operator">=</span> <span class="token boolean">FALSE</span><span class="token punctuation">)</span>
+
+<span class="token comment">#cell type</span>
+B<span class="token operator">-</span>cells
+CD45
+CD8 T cells
+Cytotoxic cells
+DC
+Exhausted CD8
+Macrophages
+Mast cells
+NK CD56dim cells
+NK cells
+Neutrophils
+T<span class="token operator">-</span>cells
+Th1 cells
+Treg
+TILs_Score
+
+</pre><h3 class="mume-header" id="313-tils_28_subpopulations">3.1.3 TILs_28_subpopulations</h3>
+
+<p>Pornpimol et al.,2017 selected 782 genes which are representative of specific immune cell subpopulations.</p>
+<p>We then used gene set enrichment analysis (Barbie, David A et al.2009) with this gene set to decompose cellular profiles from RNA sequencing data from bulk tissue for individual samples.</p>
+<pre data-role="codeBlock" data-info="R" class="language-r"><span class="token comment"># input matrix: raw reads count</span>
+result <span class="token operator">&lt;-</span> ssgsea<span class="token punctuation">(</span>demo_counts<span class="token punctuation">,</span>normalization <span class="token operator">=</span> <span class="token boolean">FALSE</span><span class="token punctuation">,</span>db <span class="token operator">=</span> <span class="token string">"TILs_28_subpopulations"</span><span class="token punctuation">)</span>
+<span class="token comment"># input matrix: normalized expression values</span>
+result <span class="token operator">&lt;-</span> ssgsea<span class="token punctuation">(</span>demo_TPM<span class="token punctuation">,</span>normalization <span class="token operator">=</span> <span class="token boolean">TRUE</span><span class="token punctuation">,</span>db <span class="token operator">=</span> <span class="token string">"TILs_28_subpopulations"</span><span class="token punctuation">)</span>
+
+<span class="token comment">#cell type</span>
+Activated_B_cell
+Activated_CD4_T_cell
+Activated_CD8_T_cell
+Activated_dendritic_cell
+CD56bright_natural_killer_cell
+CD56dim_natural_killer_cell
+Central_memory_CD4_T_cell
+Central_memory_CD8_T_cell
+Effector_memeory_CD4_T_cell
+Effector_memeory_CD8_T_cell
+Eosinophil
+Gamma_delta_T_cell
+Immature_B_cell
+Immature_dendritic_cell
+MDSC
+Macrophage
+Mast_cell
+Memory_B_cell
+Monocyte
+Natural_killer_T_cell
+Natural_killer_cell
+Neutrophil
+Plasmacytoid_dendritic_cell
+Regulatory_T_cell
+T_follicular_helper_cell
+Type_17_T_helper_cell
+Type_1_T_helper_cell
+Type_2_T_helper_cell
+</pre><h3 class="mume-header" id="134-ipres-marker">1.3.4 IPRES marker</h3>
+
+<p>Innately resistant tumors display a transcriptional signature (referred to as the IPRES or Innate anti-PD-1 Resistance) indicating concurrent upexpression of genes involved in the regulation of mesenchymal transition, cell adhesion, ECM remodeling, angiogenesis and wound-healing (Hugo et al.,2016).</p>
+<p>Previous findings suggest that attenuating the biological processes that underlie IPRES may improve anti-PD1 response in melanoma and other cancer types.</p>
+<pre data-role="codeBlock" data-info="R" class="language-r"><span class="token comment"># input matrix: raw reads count</span>
+result <span class="token operator">&lt;-</span> IPRES<span class="token punctuation">(</span>demo_counts<span class="token punctuation">,</span>normalization <span class="token operator">=</span> <span class="token boolean">FALSE</span><span class="token punctuation">)</span>
+<span class="token comment"># input matrix: normalized expression values</span>
+result <span class="token operator">&lt;-</span> IPRES<span class="token punctuation">(</span>demo_TPM<span class="token punctuation">)</span>
+
+<span class="token comment">#cell type</span>
+ANASTASSIOU_MULTICANCER_INVASIVENESS_SIGNATURE
+CHARAFE_BREAST_CANCER_BASAL_VS_MESENCHYMAL_DN
+EP_BLOOD_VESS_DEVEL_DN_IN_R
+HARRIS_HYPOXIA
+JAEGER_METASTASIS_UP
+JEON_SMAD6_TARGETS_DN
+KARAKAS_TGFB1_SIGNALING
+LEF1_UP.V1_UP
+LIEN_BREAST_CARCINOMA_METAPLASTIC
+LU_TUMOR_ANGIOGENESIS_UP
+LU_TUMOR_ENDOTHELIAL_MARKERS_UP
+LU_TUMOR_VASCULATURE_UP
+MAHADEVAN_GIST_MORPHOLOGICAL_SWITCH
+MAINA_VHL_TARGETS_DN
+MAPKi_INDUCED_ANGIOGENESIS
+MAPKi_INDUCED_EMT
+MISHRA_CARCINOMA_ASSOCIATED_FIBROBLAST_UP
+MS_RESP_TO_HYPOXIA_UP_IN_MAPKi_aPDL1_NR
+MS_RESP_TO_WOUNDING_UP_IN_MAPKi_aPDL1_NR
+POOLA_INVASIVE_BREAST_CANCER_UP
+POST_OP_WOUNDHEALING
+ROY_WOUND_BLOOD_VESSEL_UP
+VECCHI_GASTRIC_CANCER_ADVANCED_VS_EARLY_UP
+WESTON_VEGFA_TARGETS_12HR
+WESTON_VEGFA_TARGETS_6HR
+YE_METASTATIC_LIVER_CANCER
+</pre><h3 class="mume-header" id="135-gep-marker">1.3.5 GEP marker</h3>
+
+<p>Mark et al.,2017 identified a biomarker T-cell–inflamed gene-expression profile (GEP), which was tumor type–independent dimensions of the tumor microenvironment relevant to predicting clinical outcome for agents targeting the PD-1/PD-L1 signaling pathway.</p>
+<pre data-role="codeBlock" data-info="R" class="language-r">result <span class="token operator">&lt;-</span> GEP<span class="token punctuation">(</span>exp_matrix <span class="token operator">=</span> demo_TPM<span class="token punctuation">)</span>
+
+<span class="token comment">#cell type</span>
+GEP_score
+</pre><h3 class="mume-header" id="136-integration-signature">1.3.6 integration signature</h3>
+
+<p>we integrate tumor microenvironment-related signatures, evaluated the abundance of immune cell populations in the tumor microenvironment according to Pornpimol et al.,2017 and Ott et al.,2019.</p>
+<pre data-role="codeBlock" data-info="R" class="language-r">result <span class="token operator">&lt;-</span> sig_calculate<span class="token punctuation">(</span>exp_matrix <span class="token operator">=</span> demo_TPM<span class="token punctuation">,</span>db <span class="token operator">=</span> <span class="token string">"integration_signature"</span><span class="token punctuation">)</span>
+
+<span class="token comment">#cell type</span>
+Cytolytic<span class="token operator">-</span>activity
+IFNg<span class="token operator">-</span>signature
+Immunocostimulators
+Immunoinhibitors
+MHC<span class="token operator">-</span>Class<span class="token operator">-</span>I
+MHC<span class="token operator">-</span>Class<span class="token operator">-</span>II
+Non<span class="token operator">-</span>Class
+adhesion<span class="token operator">-</span>molecules
+chemokines
+</pre><h3 class="mume-header" id="137-tls-signature">1.3.7 TLS signature</h3>
+
+<p>Tertiary lymphoid structures (TLSs) provide an immunological antineoplastic effect, tls_sig signature can be used to calculate the score of Tertiary lymphoid structures according to Tokunaga et al.,2020 and Rita et al.,2020.</p>
+<pre data-role="codeBlock" data-info="R" class="language-r">result <span class="token operator">&lt;-</span> sig_calculate<span class="token punctuation">(</span>exp_matrix <span class="token operator">=</span> demo_TPM<span class="token punctuation">,</span>db <span class="token operator">=</span> <span class="token string">"tls_sig"</span><span class="token punctuation">)</span>
+
+<span class="token comment">#cell type</span>
+TLS_12gene
+TLS_9gene
+</pre><h3 class="mume-header" id="138-public-databases">1.3.8 public databases</h3>
+
+<p>msigdb : <a href="https://www.gsea-msigdb.org/gsea/msigdb">https://www.gsea-msigdb.org/gsea/msigdb</a></p>
+<pre data-role="codeBlock" data-info="R" class="language-r"><span class="token comment">#db : msigdb_C2, msigdb_C5, msigdb_C6, msigdb_C7, msigdb_H</span>
+<span class="token comment"># input matrix: raw reads count</span>
+result <span class="token operator">&lt;-</span> ssgsea<span class="token punctuation">(</span>demo_counts<span class="token punctuation">,</span>normalization <span class="token operator">=</span> <span class="token boolean">FALSE</span><span class="token punctuation">,</span>db <span class="token operator">=</span> <span class="token string">"msigdb_H"</span><span class="token punctuation">)</span>
+<span class="token comment"># input matrix: normalized expression values</span>
+result <span class="token operator">&lt;-</span> ssgsea<span class="token punctuation">(</span>demo_TPM<span class="token punctuation">,</span>normalization <span class="token operator">=</span> <span class="token boolean">TRUE</span><span class="token punctuation">,</span>db <span class="token operator">=</span> <span class="token string">"msigdb_H"</span><span class="token punctuation">)</span>
+</pre><p>cancerSEA : <a href="http://biocc.hrbmu.edu.cn/CancerSEA/">http://biocc.hrbmu.edu.cn/CancerSEA/</a></p>
+<pre data-role="codeBlock" data-info="R" class="language-r"><span class="token comment"># input matrix: raw reads count</span>
+result <span class="token operator">&lt;-</span> ssgsea<span class="token punctuation">(</span>demo_counts<span class="token punctuation">,</span> normalization <span class="token operator">=</span> <span class="token boolean">FALSE</span><span class="token punctuation">,</span> db <span class="token operator">=</span> <span class="token string">"cancerSEA"</span><span class="token punctuation">)</span>
+<span class="token comment"># input matrix: normalized expression values</span>
+result <span class="token operator">&lt;-</span> ssgsea<span class="token punctuation">(</span>demo_TPM<span class="token punctuation">,</span>normalization <span class="token operator">=</span> <span class="token boolean">TRUE</span><span class="token punctuation">,</span>db <span class="token operator">=</span> <span class="token string">"cancerSEA"</span><span class="token punctuation">)</span>
+</pre><h2 class="mume-header" id="32-statistical-methods">3.2 Statistical methods</h2>
+
+<h3 class="mume-header" id="321-diffes">3.2.1 diffES</h3>
+
+<p>For comparison of two patient groups, different immune cell types were analyzed by the limma package.</p>
+<pre data-role="codeBlock" data-info="R" class="language-r">result <span class="token operator">&lt;-</span> diffES<span class="token punctuation">(</span>score_matrix <span class="token operator">=</span> cell_enrich<span class="token punctuation">,</span>groupinfo <span class="token operator">=</span> demo_groupinfo<span class="token punctuation">)</span>
+</pre><h3 class="mume-header" id="322-t-test">3.2.2 t test</h3>
+
+<p>For comparison of two groups,t test can be used when your data are independent and normally distributed.</p>
+<p>Parameter <strong>paired</strong> is setted as "True", when compare the means of two samples when each observation in one sample can be paired with an observation in the other sample.</p>
+<pre data-role="codeBlock" data-info="R" class="language-r">result <span class="token operator">&lt;-</span> t_test<span class="token punctuation">(</span>score_matrix <span class="token operator">=</span> cell_enrich<span class="token punctuation">,</span>groupinfo <span class="token operator">=</span> demo_groupinfo<span class="token punctuation">,</span>paired <span class="token operator">=</span> F<span class="token punctuation">)</span>
+<span class="token comment">#paired sample</span>
+result <span class="token operator">&lt;-</span> t_test<span class="token punctuation">(</span>score_matrix <span class="token operator">=</span> cell_enrich<span class="token punctuation">,</span>groupinfo <span class="token operator">=</span> simulated_groupinfo_paired<span class="token punctuation">,</span>paired <span class="token operator">=</span> T<span class="token punctuation">)</span>
+</pre><h3 class="mume-header" id="323-wilcoxon-test">3.2.3 wilcoxon test</h3>
+
+<p>For comparison of two groups,non-parametric two-sided Wilcoxon-rank sum test was used.</p>
+<p>Parameter <strong>paired</strong> is setted as "True", when compare the means of two samples when each observation in one sample can be paired with an observation in the other sample.</p>
+<pre data-role="codeBlock" data-info="R" class="language-r">result <span class="token operator">&lt;-</span> wilcox<span class="token punctuation">(</span>score_matrix <span class="token operator">=</span> cell_enrich<span class="token punctuation">,</span>groupinfo <span class="token operator">=</span> demo_groupinfo<span class="token punctuation">,</span>paired <span class="token operator">=</span> F<span class="token punctuation">)</span>
+<span class="token comment">#paired sample</span>
+result <span class="token operator">&lt;-</span> wilcox<span class="token punctuation">(</span>score_matrix <span class="token operator">=</span> cell_enrich<span class="token punctuation">,</span>groupinfo <span class="token operator">=</span> simulated_groupinfo_paired<span class="token punctuation">,</span>paired <span class="token operator">=</span> T<span class="token punctuation">)</span>
+
+</pre><h2 class="mume-header" id="33-visualization-methods">3.3 Visualization methods</h2>
+
+<pre data-role="codeBlock" data-info="R" class="language-r"><span class="token comment">### box plots for immnume signatures score with clinical features</span>
+p <span class="token operator">&lt;-</span> marker_boxplot<span class="token punctuation">(</span>score_matrix <span class="token operator">=</span> cell_enrich<span class="token punctuation">,</span>groupinfo <span class="token operator">=</span> demo_groupinfo<span class="token punctuation">,</span>fontsize <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">,</span>paired <span class="token operator">=</span> <span class="token boolean">FALSE</span><span class="token punctuation">)</span>
+print<span class="token punctuation">(</span>p<span class="token punctuation">)</span>
+<span class="token comment">#paired sample</span>
+p <span class="token operator">&lt;-</span> marker_boxplot<span class="token punctuation">(</span>score_matrix <span class="token operator">=</span> cell_enrich<span class="token punctuation">,</span>groupinfo <span class="token operator">=</span> simulated_groupinfo_paired<span class="token punctuation">,</span>paired <span class="token operator">=</span> T<span class="token punctuation">)</span>
+print<span class="token punctuation">(</span>p<span class="token punctuation">)</span>
+</pre><pre data-role="codeBlock" data-info="R" class="language-r"><span class="token comment">### specify cell type variables for faceting the plot into multiple panels</span>
+p <span class="token operator">&lt;-</span> boxplot_diff<span class="token punctuation">(</span>score_matrix <span class="token operator">=</span> cell_enrich<span class="token punctuation">,</span>groupinfo <span class="token operator">=</span> demo_groupinfo<span class="token punctuation">,</span>paired <span class="token operator">=</span> F<span class="token punctuation">)</span>
+print<span class="token punctuation">(</span>p<span class="token punctuation">)</span>
+<span class="token comment">#paired sample</span>
+p <span class="token operator">&lt;-</span> boxplot_diff<span class="token punctuation">(</span>score_matrix <span class="token operator">=</span> cell_enrich<span class="token punctuation">,</span>groupinfo <span class="token operator">=</span> simulated_groupinfo_paired<span class="token punctuation">,</span>paired <span class="token operator">=</span> T<span class="token punctuation">)</span>
+print<span class="token punctuation">(</span>p<span class="token punctuation">)</span>
+</pre><pre data-role="codeBlock" data-info="R" class="language-r"><span class="token comment">### supervised analyses of cell type score between groups</span>
+p <span class="token operator">&lt;-</span> marker_heatmap<span class="token punctuation">(</span>score_matrix <span class="token operator">=</span> cell_enrich<span class="token punctuation">,</span>scaled <span class="token operator">=</span> <span class="token string">"row"</span><span class="token punctuation">,</span>groupinfo <span class="token operator">=</span> groupinfo<span class="token punctuation">,</span>title_size <span class="token operator">=</span> <span class="token number">8</span><span class="token punctuation">)</span>
+print<span class="token punctuation">(</span>p<span class="token punctuation">)</span>
+</pre><h2 class="mume-header" id="34-other-tools">3.4 Other tools</h2>
+
+<p>Normalized gene expression data are needed as input matirx for 5/8 signatures.<br>
+This function provides expression data normalization methods.</p>
+<pre data-role="codeBlock" data-info="R" class="language-r"><span class="token comment"># gene_len can be one of hg19_gene_symbol_length, hg38_gene_symbol_length</span>
+<span class="token comment"># normalization method can be FPKM or TPM</span>
+result <span class="token operator">&lt;-</span> counts_normlization<span class="token punctuation">(</span>demo_counts<span class="token punctuation">,</span>method <span class="token operator">=</span> <span class="token string">"FPKM"</span><span class="token punctuation">,</span>gene_len <span class="token operator">=</span> <span class="token string">"hg38_gene_symbol_length"</span><span class="token punctuation">)</span>
+</pre>
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  </body></html>

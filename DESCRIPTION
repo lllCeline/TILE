@@ -1,0 +1,24 @@
+Package: TILE
+Title: Estimation of Tumor infiltrating lymphocytes
+Version: 1.0
+Authors@R: 
+    person("xueyan", "cheng", email = "cheng.xueyan@genecast.com.cn",role = c("aut", "cre"))
+Description: This package is used for estimating the tumor microenvironment according to Multi-signatures, 
+    provided basic statistical tests and visualization methods for estimation results.
+License: `use_gpl3_license()` 
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Depends: 
+    R (>= 2.10)
+LazyData: true
+Imports: 
+    ComplexHeatmap,
+    data.table,
+    dplyr,
+    ggplot2,
+    ggpubr,
+    GSVA,
+    limma,
+    reshape2,
+    rstatix
